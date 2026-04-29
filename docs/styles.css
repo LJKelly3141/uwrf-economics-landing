@@ -728,17 +728,7 @@ html { scroll-behavior: smooth; }
   padding: 24px 0;
   border-bottom: 1px solid var(--rule);
   align-items: center;
-  transition: padding 0.25s, background 0.2s;
 }
-.path-row:hover {
-  background: var(--accent);
-  color: #fff;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-.path-row:hover .idx,
-.path-row:hover .desc,
-.path-row:hover .arrow { color: rgba(255,255,255,0.85); }
 .path-row .idx {
   font-family: var(--font-mono);
   font-size: 11px;
@@ -759,10 +749,9 @@ html { scroll-behavior: smooth; }
 .path-row .arrow {
   font-family: var(--font-mono);
   font-size: 18px;
-  color: var(--ink-3);
-  transition: transform 0.2s;
+  color: var(--ink-mute);
+  opacity: 0.5;
 }
-.path-row:hover .arrow { transform: translateX(8px); }
 @media (max-width: 720px) {
   .path-row { grid-template-columns: 40px 1fr auto; }
   .path-row .desc { display: none; }
