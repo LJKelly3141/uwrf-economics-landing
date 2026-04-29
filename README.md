@@ -3,15 +3,37 @@
 Editorial landing page for the Economics Program at the University of
 Wisconsin–River Falls. Static HTML/CSS/JS — no build step.
 
+**Live:** https://ljkelly3141.github.io/uwrf-economics-landing/
+
 ## Structure
 
 ```
 LandingPage/
-├── index.html        Main page
-├── styles.css        Design system + sections
-├── images/           Faculty photos + campus photo
-└── README.md
+├── index.html                       Main page (single-file, 6 sections)
+├── styles.css                       Design tokens + all section styles
+├── README.md                        This file
+├── .gitignore
+└── images/
+    ├── kelly.jpg                    Faculty — Logan Kelly (Chair)
+    ├── abegaz.jpg                   Faculty — Melaku Abegaz
+    ├── bretschneider-fries.jpg      Faculty — Christine Bretschneider-Fries
+    ├── dzikpe.jpg                   Faculty — Francis Dzikpe
+    ├── campus.png                   Campus break photo (UWRF UMC backdrop)
+    └── uwrf-logo.png                UWRF wordmark (not yet placed in markup)
 ```
+
+## Page sections
+
+1. **Topbar** — sticky navigation, brand mark, primary CTA
+2. **Hero** — vertical red rail + giant editorial headline with red-block "&"
+3. **Stat strip** — four credibility numbers on a dark band
+4. **01 / What is Economics** — dictionary-style definition triplet
+5. **02 / Why study Economics** — three numbered rows on a dark field
+6. **Campus break** — full-bleed UWRF photo with red caption stripe
+7. **03 / Careers** — giant `$115,440` red panel + 8-row career table
+8. **04 / Faculty** — four-card grid (grayscale → color on hover)
+9. **05 / Final CTA** — red field with mailto-backed form + contact card
+10. **Footer** — site map and address
 
 ## Local preview
 
