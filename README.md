@@ -7,19 +7,23 @@ Wisconsin–River Falls. Static HTML/CSS/JS — no build step.
 
 ## Structure
 
+The site lives in `docs/` so GitHub Pages can serve it from the
+`main` branch's `/docs` folder.
+
 ```
 LandingPage/
-├── index.html                       Main page (single-file, 6 sections)
-├── styles.css                       Design tokens + all section styles
-├── README.md                        This file
+├── README.md                            This file
 ├── .gitignore
-└── images/
-    ├── kelly.jpg                    Faculty — Logan Kelly (Chair)
-    ├── abegaz.jpg                   Faculty — Melaku Abegaz
-    ├── bretschneider-fries.jpg      Faculty — Christine Bretschneider-Fries
-    ├── dzikpe.jpg                   Faculty — Francis Dzikpe
-    ├── campus.png                   Campus break photo (UWRF UMC backdrop)
-    └── uwrf-logo.png                UWRF wordmark (not yet placed in markup)
+└── docs/                                ← GitHub Pages root
+    ├── index.html                       Main page (single-file)
+    ├── styles.css                       Design tokens + section styles
+    └── images/
+        ├── kelly.jpg                    Faculty — Logan Kelly (Chair)
+        ├── abegaz.jpg                   Faculty — Melaku Abegaz
+        ├── bretschneider-fries.jpg      Faculty — Christine Bretschneider-Fries
+        ├── dzikpe.jpg                   Faculty — Francis Dzikpe
+        ├── campus.png                   Campus break photo (UWRF UMC backdrop)
+        └── uwrf-logo.png                UWRF wordmark (not yet placed in markup)
 ```
 
 ## Page sections
@@ -38,19 +42,19 @@ LandingPage/
 ## Local preview
 
 ```sh
-open index.html
+open docs/index.html
 ```
 
 …or serve from any static server:
 
 ```sh
-python3 -m http.server 8000
+cd docs && python3 -m http.server 8000
 ```
 
 ## Deployment
 
-Published via GitHub Pages from the `main` branch root. The live URL
-resolves at `https://<owner>.github.io/uwrf-economics-landing/`.
+Published via GitHub Pages from `main` / `docs/`. Pushing to `main`
+triggers a rebuild automatically (typically <60 s).
 
 ## Notes for editors
 
